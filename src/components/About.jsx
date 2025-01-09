@@ -30,7 +30,7 @@ const About = () => {
 
       <Section>
         <Paragraph>
-          Welcome to <strong>AMS</strong>, where we redefine your travel
+          Welcome to <strong>BidexFlight</strong>, where we redefine your travel
           experience. Our airline management system is designed to provide
           seamless booking, personalized services, and efficient management of
           flight schedules, ensuring a smooth and stress-free journey for every
@@ -61,7 +61,7 @@ const About = () => {
       <Section>
         <Title>Why Choose Us?</Title>
         <Paragraph>
-          At <strong>AMS</strong>, we offer a seamless booking experience,
+          At <strong>BidexFlight</strong>, we offer a seamless booking experience,
           on-time flights, affordable travel, and world-class service. Whether
           you're traveling for business or leisure, we ensure you get the best
           experience.
@@ -82,7 +82,7 @@ const About = () => {
         <Title>Contact Us</Title>
         <Paragraph>
           For inquiries, feel free to contact us via our{" "}
-          <a href="/contact">Contact Page</a> or email us at support@ams.com.
+          <a href="/contact">Contact Page</a> or email us at support@BidexFlight.com.
           We're always ready to help with your travel needs.
         </Paragraph>
       </Section>

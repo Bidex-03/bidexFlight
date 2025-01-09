@@ -97,7 +97,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <Logo>
-        <LogoLink to="/home">AMS</LogoLink>
+        <LogoLink to="/home">BidexFlight</LogoLink>
       </Logo>
 
       <Hamburger onClick={toggleMenu}>

@@ -28,7 +28,7 @@ const Contact = () => {
     <ContactContainer>
       <ContactInfo>
         <h1>Contact Us</h1>
-        <p className="contact-details">Email: support@ams.com</p>
+        <p className="contact-details">Email: support@BidexFlight.com</p>
         <p className="contact-details">Phone: (123) 456-7890</p>
         <p>We're available 24/7 to assist you!</p>
       </ContactInfo>
