@@ -129,7 +129,7 @@ const Home = () => {
       {/* Call to Action Section */}
       <CTASection>
         <h2>Ready to Take Off?</h2>
-        <Button size="large" onClick={() => navigate("/book-ticket")}>
+        <Button size="large" hoverColor={"#333"} onClick={() => navigate("/book-ticket")}>
           Book Now
         </Button>
       </CTASection>
