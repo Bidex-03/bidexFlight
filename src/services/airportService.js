@@ -6,17 +6,17 @@ const fetchAirports = async () => {
   const { data, error } = await supabase.from("airports").select("*");
 
   if (error) {
-    throw new Error(error.message); // Handle error appropriately
+    throw new Error(error.message);
   }
 
-  return data; // Return the fetched data
+  return data;
 };
 
 // Custom Hook to use Airports
 export const useAirports = () => {
   return useQuery({
-    queryKey: ["airports"], // The query key for caching purposes
-    queryFn: fetchAirports, // The query function that fetches airports from Supabase
-    staleTime: 1000 * 60 * 5, // Stale time of 5 minutes
+    queryKey: ["airports"],
+    queryFn: fetchAirports,
+    staleTime: 1000 * 60 * 5,
   });
 };

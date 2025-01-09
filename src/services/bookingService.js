@@ -52,13 +52,12 @@ export const deleteBooking = async (bookingId) => {
     .delete()
     .eq("booking_id", bookingId);
 
-  console.log("Supabase Response:", { data, error }); // Log the response
-
+  console.log("Supabase Response:", { data, error });
   if (error) {
-    console.error("Error deleting booking:", error.message); // Log the error if any
+    console.error("Error deleting booking:", error.message);
     throw new Error("Error deleting booking");
   }
 
-  console.log("Booking deleted successfully:", data); // Log the success message with data
-  return bookingId; // Return the booking ID for further use
+  console.log("Booking deleted successfully:", data);
+  return bookingId;
 };
