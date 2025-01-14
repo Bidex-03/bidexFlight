@@ -11,7 +11,6 @@ import GlobalStyles from "./styles/GlobalStyles";
 import Home from "./components/Home";
 import BookTicket from "./components/BookTicket";
 import BoardingPass from "./components/BoardingPass";
-import AdminDashboard from "./components/AdminDashboard";
 import NotFound from "./components/NotFound";
 import SignUp from "./authentication/SignUp";
 import SignIn from "./authentication/SignIn";
@@ -54,7 +53,6 @@ function App() {
             <Route path="/book-ticket" element={<BookTicket />} />
             <Route path="/book-flight/:flightId" element={<BookTicket />} />
             <Route path="/boarding-pass" element={<BoardingPass />} />
-            <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/profile" element={<Profile />} />
           </Route>
 
