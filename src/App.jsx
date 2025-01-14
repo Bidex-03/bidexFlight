@@ -9,7 +9,6 @@ import {
 
 import GlobalStyles from "./styles/GlobalStyles";
 import Home from "./components/Home";
-import AvailableFlights from "./components/AvailableFlights";
 import BookTicket from "./components/BookTicket";
 import BoardingPass from "./components/BoardingPass";
 import AdminDashboard from "./components/AdminDashboard";
@@ -52,7 +51,6 @@ function App() {
             <Route path="/bookings" element={<Bookings />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            {/* <Route path="/available-flights" element={<AvailableFlights />} /> */}
             <Route path="/book-ticket" element={<BookTicket />} />
             <Route path="/book-flight/:flightId" element={<BookTicket />} />
             <Route path="/boarding-pass" element={<BoardingPass />} />
