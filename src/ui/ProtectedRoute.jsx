@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { useUser } from "../authentication/useUser";
-import Spinner from "./Spinner";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import LoadingSpinner from "./Spinner";
@@ -28,7 +27,6 @@ const ProtectedRoute = ({ children }) => {
   if (isLoading)
     return (
       <FullPage>
-        {/* <Spinner /> */}
         <LoadingSpinner />
       </FullPage>
     );
