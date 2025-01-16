@@ -44,8 +44,6 @@ const Title = styled.h2`
 `;
 
 const SignIn = () => {
-  // const [email, setEmail] = useState("bidex@example.com");
-  // const [password, setPassword] = useState("12345678");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { login, isLoading } = useLogin();
@@ -85,7 +83,6 @@ const SignIn = () => {
           disabled={isLoading}
         />
 
-        {/* <div style={{display: "flex", alignItems: "center", gap: "10px"}}> */}
         <div>
           <Button type="submit">
             {!isLoading ? "Sign in" : <SpinnerMini />}
