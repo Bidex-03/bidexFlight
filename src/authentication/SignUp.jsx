@@ -119,7 +119,6 @@ const SignUp = () => {
 
         <div>
           <Button type="submit">
-            {/* {isLoading ? <SpinnerMini /> : ""} Sign Up */}
             {isLoading ? <SpinnerMini /> : "Sign Up"}
           </Button>
           <p style={{ marginTop: "10px" }}>
