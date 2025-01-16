@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import PropTypes from "prop-types";
 
 // Styled-component for the button
 const StyledButton = styled.button`
@@ -50,18 +49,6 @@ const Button = ({
       {children}
     </StyledButton>
   );
-};
-
-// Prop types for the button
-Button.propTypes = {
-  children: PropTypes.node.isRequired,
-  onClick: PropTypes.func,
-  size: PropTypes.oneOf(["small", "large"]),
-  bgColor: PropTypes.string,
-  textColor: PropTypes.string,
-  hoverColor: PropTypes.string,
-  fullWidth: PropTypes.bool,
-  disabled: PropTypes.bool,
 };
 
 // Default props for the button
