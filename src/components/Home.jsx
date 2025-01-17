@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../ui/Button";
-// import heroImg from "../assets/hero-image.jpg"
 import heroImg from "../assets/hero-image.webp";
 
 // Styled-components for the landing page sections
