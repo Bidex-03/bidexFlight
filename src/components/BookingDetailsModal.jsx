@@ -113,9 +113,9 @@ const BookingDetailsModal = ({ booking, onClose }) => {
 const formatTimestamp = (timestamp) => {
   const date = new Date(timestamp);
   return date.toLocaleDateString("en-US", {
-    month: "short", // abbreviated month (e.g., "Oct")
-    day: "numeric", // day of the month (e.g., "30")
-    year: "numeric", // full year (e.g., "2023")
+    month: "short",
+    day: "numeric",
+    year: "numeric",
   });
 };
 

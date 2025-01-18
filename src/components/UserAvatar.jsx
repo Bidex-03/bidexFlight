@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import ButtonIcon from "../ui/ButtonIcon";
+// import ButtonIcon from "../ui/ButtonIcon";
 import styled from "styled-components";
 import { useUser } from "../authentication/useUser";
 import defaultUser from "../assets/default-user.jpg";
+import { Button } from "../ui/Button";
 
 const Avatar = styled.img`
   display: flex;
@@ -35,12 +36,12 @@ const UserAvatar = () => {
   const { fullName, avatar } = user.user_metadata;
 
   return (
-    <ButtonIcon onClick={() => navigate("/profile")}>
+    <Button onClick={() => navigate("/profile")}>
       <AvatarContainer>
         <Avatar src={avatar || defaultUser} alt={`Avatar of ${fullName}`} />
         <span>{fullName}</span>
       </AvatarContainer>
-    </ButtonIcon>
+    </Button>
   );
 };
 
