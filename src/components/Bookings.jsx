@@ -4,7 +4,6 @@ import { useQuery, useMutation } from "@tanstack/react-query";
 import { fetchBookings, deleteBooking } from "../services/bookingService";
 import Spinner from "../ui/Spinner";
 import BookingDetailsModal from "./BookingDetailsModal";
-import EditBookingModal from "./EditBookingModal";
 import DeleteConfirmationModal from "./DeleteConfirmationModal";
 import { FullPage } from "../ui/ProtectedRoute";
 import { useUser } from "../authentication/useUser";
@@ -36,14 +35,14 @@ const TableHead = styled.th`
   color: var(--background-color);
   padding: 10px;
   text-align: left;
-  white-space: nowrap; /* Prevents header text from wrapping */
+  white-space: nowrap;
 `;
 
 const TableCell = styled.td`
   padding: 10px;
   border: 1px solid #ccc;
   text-align: left;
-  white-space: nowrap; /* Prevents table content from wrapping */
+  white-space: nowrap;
 `;
 
 const ActionButton = styled.button`
@@ -98,10 +97,9 @@ const NoBookingsMessage = styled.p`
 const Bookings = () => {
   const [selectedBooking, setSelectedBooking] = useState(null);
   const [isViewing, setIsViewing] = useState(false);
-  const [isEditing, setIsEditing] = useState(false);
-  const [isDeleting, setIsDeleting] = useState(false); // For showing delete confirmation modal
-  const [bookings, setBookings] = useState([]); // Local state for bookings
-  const { user } = useUser(); // useUser inside the component
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [bookings, setBookings] = useState([]);
+  const { user } = useUser();
 
   const { isLoading, error } = useQuery({
     queryKey: ["bookings", user?.id],
