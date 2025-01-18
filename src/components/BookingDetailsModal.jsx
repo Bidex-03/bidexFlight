@@ -8,14 +8,14 @@ const ModalContainer = styled.div`
   background-color: #fff;
   padding: 40px;
   width: 400px;
-  max-width: 90%; /* Ensures it fits within smaller screens */
+  max-width: 90%;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   z-index: 1000;
 
   @media (max-width: 768px) {
     padding: 20px;
-    width: 90%; /* Adjusts width for mobile screens */
+    width: 90%;
   }
 `;
 
@@ -35,7 +35,7 @@ const Title = styled.h3`
   font-size: 24px;
 
   @media (max-width: 768px) {
-    font-size: 20px; /* Adjust font size on mobile */
+    font-size: 20px;
   }
 `;
 
@@ -45,7 +45,7 @@ const DetailsText = styled.p`
   color: var(--text-color);
 
   @media (max-width: 768px) {
-    font-size: 14px; /* Smaller font size for mobile */
+    font-size: 14px;
   }
 `;
 
@@ -66,7 +66,7 @@ const CloseButton = styled.button`
   }
 
   @media (max-width: 768px) {
-    font-size: 14px; /* Smaller font size for mobile */
+    font-size: 14px;
     padding: 8px 16px;
   }
 `;

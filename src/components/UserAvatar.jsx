@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-// import ButtonIcon from "../ui/ButtonIcon";
 import styled from "styled-components";
 import { useUser } from "../authentication/useUser";
 import defaultUser from "../assets/default-user.jpg";
