@@ -147,11 +147,6 @@ const Bookings = () => {
     setIsViewing(true);
   };
 
-  // const handleEdit = (booking) => {
-  //   setSelectedBooking(booking);
-  //   setIsEditing(true);
-  // };
-
   if (isLoading) {
     return (
       <FullPage>
@@ -196,9 +191,6 @@ const Bookings = () => {
                       <ActionButton onClick={() => handleView(booking)}>
                         View
                       </ActionButton>
-                      {/* <ActionButton onClick={() => handleEdit(booking)}>
-                        Edit
-                      </ActionButton> */}
                       <ActionButton
                         onClick={() => handleDelete(booking.booking_id)}
                       >
@@ -217,12 +209,6 @@ const Bookings = () => {
         <BookingDetailsModal
           booking={selectedBooking}
           onClose={() => setIsViewing(false)}
-        />
-      )}
-      {isEditing && (
-        <EditBookingModal
-          booking={selectedBooking}
-          onClose={() => setIsEditing(false)}
         />
       )}
       {isDeleting && selectedBooking && (
