@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const AboutContainer = styled.div`
@@ -82,7 +83,7 @@ const About = () => {
         <Title>Contact Us</Title>
         <Paragraph>
           For inquiries, feel free to contact us via our{" "}
-          <a href="/contact">Contact Page</a> or email us at support@BidexFlight.com.
+          <Link to="/contact">Contact Page</Link> or email us at support@BidexFlight.com.
           We're always ready to help with your travel needs.
         </Paragraph>
       </Section>
